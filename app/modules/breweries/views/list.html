@@ -1,0 +1,29 @@
+<header></header>
+<div class="title">Local Brews</div>
+<br>
+
+
+
+
+  <div class="brewery" ng-repeat="brewery in listCtrl.breweries">
+    <div class="brewery--logo">
+      <img ng-src="{{ brewery.brewery.images.squareMedium }}">
+    </div>
+
+    <div class="brewery--info">
+      <a ui-sref="brewery({ id: brewery.breweryId })">{{ brewery.brewery.name }}</a>
+
+      <a ui-sref="brewery({ id: brewery.breweryId })">{{ brewery.locality }}</a>
+
+      <a ui-sref="brewery({ id: brewery.breweryId })">{{ brewery.region }}</a>
+
+
+      <a ui-sref="brewery({ id: brewery.breweryId })">{{ brewery.phone }}</a>
+
+
+      <a ui-sref="brewery({ id: brewery.breweryId })">{{ brewery.streetAddress }}</a>
+
+    
+      <a ui-sref="brewery({ id: brewery.breweryId })">{{ brewery.website }}</a>
+    </div>
+  </div>

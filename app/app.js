@@ -5,12 +5,14 @@ import firebase from 'firebase';
 import angularFire from 'angularfire';
 
 import user from './modules/user';
+import breweries from './modules/breweries';
 
 let App = angular.module('app', [
   'ui.router',
   'firebase',
 
-  'jk.user'
+  'jk.user',
+  'jk.breweries'
 ]);
 
 function config($urlRouterProvider) {

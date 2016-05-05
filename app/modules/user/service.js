@@ -1,6 +1,6 @@
 class UserService {
   constructor($q, $firebaseAuth) {
-    this._q = $q;
+    this._$q = $q;
 
     this.ref = new Firebase("https://jk-final-project.firebaseIO.com");
     this.auth = $firebaseAuth(this.ref);

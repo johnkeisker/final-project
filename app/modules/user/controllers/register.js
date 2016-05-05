@@ -12,8 +12,11 @@ class RegisterController {
   register() {
     this._UserService.create(this.newUser)
       .then((response) => {
-        this._$state.go("profile")
-      });
+        this._$state.go("breweries")
+      })
+      .catch((error) => {
+        console.error(error);
+      })
 
   }
 }
