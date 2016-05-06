@@ -10,7 +10,7 @@ class BreweryDetailController {
         this.user = response;
         this._BreweryService.get($stateParams.id)
           .then((response) => {
-            this.brewery = response.data.data;
+            this.brewery = response;
             console.log(this.brewery);
           });
       })

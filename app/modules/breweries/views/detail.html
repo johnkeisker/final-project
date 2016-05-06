@@ -1,1 +1,29 @@
-{{ detailCtrl.brewery.name }}
+{{ detailCtrl.brewery.info.name }}
+
+
+<a ui-sref="breweries">go back</a>
+
+
+<div ng-repeat="beer in detailCtrl.brewery.beers">
+  // detailed info: name, alcohol level and description.
+
+  <p>{{ beer.name }}</P>
+  <p>{{ beer.style.abvMax }}</p>
+  <p>{{ beer.style.abvMin }}</p>
+  <p>{{ beer.style.description }}</p>
+</div>
+
+// general info.
+
+<p>{{ detailCtrl.brewery.info.description }}</p>
+<p>{{ detailCtrl.brewery.info.established }}</p>
+<p>{{ detailCtrl.brewery.info.website }}</p>
+
+// location
+
+<p>{{ detailCtrl.brewery.location.streetAddress }}</p>
+<p>{{ detailCtrl.brewery.location.locality }}</p>
+<p>{{ detailCtrl.brewery.location.region }}</p>
+<p>{{ detailCtrl.brewery.location.postalCode }}</p>
+<p>{{ detailCtrl.brewery.location.phone }}</p>
+<p>{{ detailCtrl.brewery.location.social }}</p>

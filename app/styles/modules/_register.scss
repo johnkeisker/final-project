@@ -1,40 +1,40 @@
-#glasses {
-  width: 100%;
-  margin: 0 auto;
-}
-
-
-
-form {
-  position: absolute;
-  top: 250px;
-  right: 130px;
-
-  @media screen and (min-width: 650px) {
-    top: 5px;
-    right: 5px;
-  }
-}
-.form-group {
-  background-color: silver;
-  text-align: center;
-  border: none;
-  border-radius: 5px;
-
-  input {
-    border: 2px solid gray;
-    border-radius: 5px;
-    text-align: center;
-  }
-}
-button {
-  position: absolute;
-  top: 80px;
-  right: 40px;
-  color: white;
-  background-color: #0000ff;
-  border-radius: 5px;
-}
+// #glasses {
+//   width: 100%;
+//   margin: 0 auto;
+// }
+//
+//
+//
+// form {
+//   position: absolute;
+//   top: 250px;
+//   right: 130px;
+//
+//   @media screen and (min-width: 650px) {
+//     top: 5px;
+//     right: 5px;
+//   }
+// }
+// .form-group {
+//   background-color: silver;
+//   text-align: center;
+//   border: none;
+//   border-radius: 5px;
+//
+//   input {
+//     border: 2px solid gray;
+//     border-radius: 5px;
+//     text-align: center;
+//   }
+// }
+// button {
+//   position: absolute;
+//   top: 80px;
+//   right: 40px;
+//   color: white;
+//   background-color: #0000ff;
+//   border-radius: 5px;
+// }
 
 
 
