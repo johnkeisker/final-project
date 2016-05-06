@@ -1,8 +1,6 @@
-<header></header>
-<div class="title">Local Brews</div>
-<br>
-
-
+<div class="page">
+  <header></header>
+  <div class="title">Local Brews</div>
 
 
   <div class="brewery" ng-repeat="brewery in listCtrl.breweries">
@@ -12,18 +10,17 @@
 
     <div class="brewery--info">
       <a ui-sref="brewery({ id: brewery.breweryId })">{{ brewery.brewery.name }}</a>
-
-      <a ui-sref="brewery({ id: brewery.breweryId })">{{ brewery.locality }}</a>
-
-      <a ui-sref="brewery({ id: brewery.breweryId })">{{ brewery.region }}</a>
-
-
-      <a ui-sref="brewery({ id: brewery.breweryId })">{{ brewery.phone }}</a>
-
-
-      <a ui-sref="brewery({ id: brewery.breweryId })">{{ brewery.streetAddress }}</a>
-
-    
       <a ui-sref="brewery({ id: brewery.breweryId })">{{ brewery.website }}</a>
+
+
+      <ul>
+        <li ui-sref="brewery({ id: brewery.breweryId })">{{ brewery.locality }}</li>
+        <li ui-sref="brewery({ id: brewery.breweryId })">{{ brewery.region }}</li>
+        <li ui-sref="brewery({ id: brewery.breweryId })">{{ brewery.phone }}</li>
+        <li ui-sref="brewery({ id: brewery.breweryId })">{{ brewery.streetAddress }}</li>
+      </ul>
+
     </div>
+
   </div>
+</div>
