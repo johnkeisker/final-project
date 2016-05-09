@@ -1,0 +1,53 @@
+.home {
+  height: 800px;
+  width: 100%;
+  background-position: center;
+  background-image: url("http://hrgrowler.com/wp-content/uploads/2015/11/craft-beer-cheers.jpg");
+  @media screen and (min-width: 650px) {
+  }
+
+}
+.title {
+  padding-top: 200px;
+}
+  h1 {
+    color: white;
+    text-align: center;
+    font-family: Verdana;
+
+
+  }
+  p {
+    color: white;
+    text-align: center;
+    font-family: Verdana;
+
+  }
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Verdana;
+}
+.home--link1 {
+
+  background-color: #529ECC;
+  background-position: center;
+  width: 200px;
+  padding: 10px 5px 10px 5px;
+  text-align: center;
+  margin: 50px auto;
+  border-radius: 5px;
+}
+.home--link2 {
+
+  background-color: #DBDBDE;
+  background-position: center;
+  width: 200px;
+  padding: 10px 5px 10px 5px;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 5px;
+}
