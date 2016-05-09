@@ -1,55 +1,86 @@
+* {
+  margin: 0;
+}
 
-// header {
-//   margin: 0 auto;
-//   width: 100%;
-//   height: 400px;
-//   background-image: url("http://noblehopspub.com/wp-content/uploads/2016/01/beer-taste-hoppy-tucson.jpg");
-//   background-repeat: no-repeat;
-//   border-bottom: 4px solid #006666;
-// }
-// .page {
-//   background-color: #c0c0c0;
-//
-//
-// }
-// .title{
-//   margin-top: -270px;
-//   margin-left: 90px;
-//   font-size: 100px;
-//   font-family: cursive;
-//   font-weight: bold;
-//   color: white;
-//   text-shadow: 5px 5px 5px black;
-//
-// }
-// .brewery {
-//   margin-top: 150px;
-//   float: left;
-//
-// }
-// .brewery--logo {
-//   width: 256px;
-//   height: 256px;
-//   border: 2px solid black;
-//   margin: 10px 20px 10px 20px;
-// }
-// .brewery--info {
-//   text-align: center;
-//   width: 250px;
-//
-//
-//   a {
-//     font-weight: bold;
-//     text-decoration: none;
-//     color: blue;
-//   }
-// }
-// ul {
-//   list-style: none;
-//   margin: 0 auto;
-//
-// }
-// li {
-//   text-align: center;
-//   font-family: Verdana;
-// }
+.list {
+  background-color: #DBDBDE;
+
+  header {
+    border-bottom: 2px solid black;
+    width: 100vw;
+    height: 350px;
+    background-image: url("http://noblehopspub.com/wp-content/uploads/2016/01/beer-taste-hoppy-tucson.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    @media screen and (min-width: 650px) {
+    }
+  }
+
+  .title{
+
+    font-size: 100px;
+    font-family: cursive;
+    font-weight: bold;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+    line-height: .9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media screen and (min-width: 650px) {
+      left: 25%;
+    }
+  }
+  .breweries {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: url("http://i.investopedia.com/dimages/graphics/thinkstockphotos-480775284.jpg?quality=80&width=680&height=680");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .brewery {
+    margin: 50px 25px;
+
+    float: left;
+
+  }
+  .brewery--logo {
+    width: 256px;
+    height: 256px;
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px black;
+    margin: 10px auto;
+  }
+  .brewery--info {
+    text-align: center;
+    width: 250px;
+  }
+  .a1 {
+    color: #c0c0c0;
+    text-shadow: 3px 3px 3px black;
+  }
+
+  a {
+    font-family: Verdana;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: blue;
+  }
+
+  ul {
+    color: white;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+
+  }
+  li {
+    text-align: center;
+    font-family: Verdana;
+  }
+}

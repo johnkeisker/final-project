@@ -6,10 +6,10 @@
   @media screen and (min-width: 650px) {
   }
 
-}
-.title {
-  padding-top: 200px;
-}
+  .title {
+    padding-top: 200px;
+  }
+
   h1 {
     color: white;
     text-align: center;
@@ -17,37 +17,42 @@
 
 
   }
+
   p {
     color: white;
+    text-shadow: 5px 5px 5px black;
     text-align: center;
     font-family: Verdana;
+    font-size: 15px;
+    font-weight: bold;
 
   }
 
-a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  font-family: Verdana;
-}
-.home--link1 {
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Verdana;
+  }
+  .home--link1 {
 
-  background-color: #529ECC;
-  background-position: center;
-  width: 200px;
-  padding: 10px 5px 10px 5px;
-  text-align: center;
-  margin: 50px auto;
-  border-radius: 5px;
-}
-.home--link2 {
+    background-color: #529ECC;
+    background-position: center;
+    width: 200px;
+    padding: 10px 5px 10px 5px;
+    text-align: center;
+    margin: 50px auto;
+    border-radius: 5px;
+  }
+  .home--link2 {
 
-  background-color: #DBDBDE;
-  background-position: center;
-  width: 200px;
-  padding: 10px 5px 10px 5px;
-  text-align: center;
-  margin: 0 auto;
-  border-radius: 5px;
+    background-color: #DBDBDE;
+    background-position: center;
+    width: 200px;
+    padding: 10px 5px 10px 5px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 5px;
+  }
 }
