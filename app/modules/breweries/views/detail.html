@@ -1,29 +1,24 @@
-{{ detailCtrl.brewery.info.name }}
 
+<div class="detail">
+  <header>
+    {{ detailCtrl.brewery.info.name }}
+    <a ui-sref="breweries">go back</a>
+  </header>
 
-<a ui-sref="breweries">go back</a>
+  <div id="f1_container" ng-repeat="beer in detailCtrl.brewery.beers">
+    <div id="f1_card" class="shadow">
+  		<div class="front face">
+        <h2>{{ beer.name }}</h2>
+  			<img src="http://static4.businessinsider.com/image/52618ae6eab8ea5e658062e2/is-draft-beer-better-than-bottled-beer.jpg"/>
+  		</div>
+  		<div class="back face">
+        <p style="font-weight: bold; margin-top: 5px; text-align: center; color: red; text-shadow: none;">{{ beer.style.abvMax }} % Alcohol by Volume</p>
 
+  			<p style="font-size: 12.5px; font-weight: bold; margin-top: 10px; color: black; text-shadow: none;">{{ beer.style.description }}</p>
 
-<div ng-repeat="beer in detailCtrl.brewery.beers">
-  // detailed info: name, alcohol level and description.
+  		</div>
+    </div>
+  </div>
 
-  <p>{{ beer.name }}</P>
-  <p>{{ beer.style.abvMax }}</p>
-  <p>{{ beer.style.abvMin }}</p>
-  <p>{{ beer.style.description }}</p>
+  <footer>Copyright Cool Guy</footer>
 </div>
-
-// general info.
-
-<p>{{ detailCtrl.brewery.info.description }}</p>
-<p>{{ detailCtrl.brewery.info.established }}</p>
-<p>{{ detailCtrl.brewery.info.website }}</p>
-
-// location
-
-<p>{{ detailCtrl.brewery.location.streetAddress }}</p>
-<p>{{ detailCtrl.brewery.location.locality }}</p>
-<p>{{ detailCtrl.brewery.location.region }}</p>
-<p>{{ detailCtrl.brewery.location.postalCode }}</p>
-<p>{{ detailCtrl.brewery.location.phone }}</p>
-<p>{{ detailCtrl.brewery.location.social }}</p>
