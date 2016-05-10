@@ -19,6 +19,10 @@ class BreweryListController {
       });
 
   }
+
+  showDetail(brewery) {
+    console.log(brewery);
+  }
 }
 
 export default BreweryListController;

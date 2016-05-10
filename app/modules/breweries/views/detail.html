@@ -1,24 +1,28 @@
 
 <div class="detail">
   <header>
-    {{ detailCtrl.brewery.info.name }}
-    <a ui-sref="breweries">go back</a>
+    <a ui-sref="breweries">Go Back</a>
+    <h1>{{ detailCtrl.brewery.info.name }}<h1>
+    <button name="button">Favorite</button>
   </header>
+  <div class="brewery-info">
+    <h3>{{ detailCtrl.brewery.info.description }}</h3>
+  </div>
+  <div class="beer-container">
+    <div id="f1_container" ng-repeat="beer in detailCtrl.brewery.beers">
+      <div id="f1_card" class="shadow">
+    		<div class="front face">
+          <h2>{{ beer.name }}</h2>
+    			<img src="http://static4.businessinsider.com/image/52618ae6eab8ea5e658062e2/is-draft-beer-better-than-bottled-beer.jpg"/>
+    		</div>
+    		<div class="back face">
+          <p style="font-weight: bold; margin-top: 5px; text-align: center; color: red; text-shadow: none;">{{ beer.style.abvMax }} % Alcohol by Volume</p>
 
-  <div id="f1_container" ng-repeat="beer in detailCtrl.brewery.beers">
-    <div id="f1_card" class="shadow">
-  		<div class="front face">
-        <h2>{{ beer.name }}</h2>
-  			<img src="http://static4.businessinsider.com/image/52618ae6eab8ea5e658062e2/is-draft-beer-better-than-bottled-beer.jpg"/>
-  		</div>
-  		<div class="back face">
-        <p style="font-weight: bold; margin-top: 5px; text-align: center; color: red; text-shadow: none;">{{ beer.style.abvMax }} % Alcohol by Volume</p>
-
-  			<p style="font-size: 12.5px; font-weight: bold; margin-top: 10px; color: black; text-shadow: none;">{{ beer.style.description }}</p>
-
-  		</div>
+    			<p class="back-face-p">{{ beer.style.description }}</p>
+    		</div>
+      </div>
     </div>
   </div>
 
-  <footer>Copyright Cool Guy</footer>
+  <footer></footer>
 </div>

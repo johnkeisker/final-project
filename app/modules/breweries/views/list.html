@@ -26,4 +26,10 @@
 
     </div>
   </div>
+
+  <div id="map">
+    <ng-map center="500 President Clinton Ave, Little Rock, AR" zoom-to-include-markers="true">
+      <marker position="{{ brewery.latitude }}, {{ brewery.longitude }}" title="{{ brewery.brewery.name}}" ng-repeat="brewery in listCtrl.breweries" on-click="listCtrl.showDetail(brewery)"></marker>
+    </ng-map>
+  </div>
 </div>
