@@ -6,14 +6,15 @@
   <div class="breweries">
     <div class="brewery" ng-repeat="brewery in listCtrl.breweries">
       <div class="brewery--logo">
-        <img ng-src="{{ brewery.brewery.images.squareMedium }}">
+        <a ui-sref="brewery({ id: brewery.breweryId })">
+          <img ng-src="{{ brewery.brewery.images.squareMedium }}">
+        </a>
       </div>
 
       <div class="brewery--info">
-        <a class="a1" ui-sref="brewery({ id: brewery.breweryId })">{{ brewery.brewery.name }} Info</a>
+        <a class="a1" ui-sref="brewery({ id: brewery.breweryId })" ng-bind-html="brewery.brewery.name"></a>
         <br>
         <a href="{{ brewery.website }}" target="_blank">Visit Website</a>
-
 
         <ul>
           <li ui-sref="brewery({ id: brewery.breweryId })">{{ brewery.locality }}</li>
@@ -27,9 +28,42 @@
     </div>
   </div>
 
-  <div id="map">
-    <ng-map center="500 President Clinton Ave, Little Rock, AR" zoom-to-include-markers="true">
-      <marker position="{{ brewery.latitude }}, {{ brewery.longitude }}" title="{{ brewery.brewery.name}}" ng-repeat="brewery in listCtrl.breweries" on-click="listCtrl.showDetail(brewery)"></marker>
+  <!-- <div id="map">
+    <ng-map default-style="true" center="-25.363882,131.044922" zoom="4" zoom-to-include-markers="true">
+      <marker id="brewery_{{ brewery.id }}" position="{{ brewery.latitude }}, {{ brewery.longitude }}" title="{{ brewery.brewery.name}}" ng-repeat="brewery in listCtrl.breweries"
+        on-click="listCtrl.showWindow(brewery)"></marker>
+      <info-window id="brewery_window">
+        <div ng-non-bindable="">
+          <span ng-bind-html="listCtrl.map.brewery.brewery.name"></span>
+          {{ listCtrl.map.brewery.streetAddress }}<br>
+          {{ listCtrl.map.brewery.locality }}<br>
+          {{ listCtrl.map.brewery.region }}<br>
+          {{ listCtrl.map.brewery.phone }}<br>
+          <a href="{{ listCtrl.map.brewery.website }}" target="_blank">Visit Website</a>
+
+        </div>
+      </info-window>
     </ng-map>
+  </div> -->
+
+  <div class="social">
+    <div>
+      <img src="http://media1.fdncms.com/arktimes/imager/get-ready-to-hop-aboard-the-little-rock-br/u/original/3654180/lrbrewbus.png">
+      <a href=" https://twitter.com/LRBrewBus" target="_blank">LRBrewBus</a>
+    </div>
+
+    <div>
+      <img src="https://pbs.twimg.com/profile_images/717726019549945856/8ZlgxyKU.jpg">
+      <a href="https://twitter.com/ARBrewersGuild" target="_blank">Arkansas Brewers Guild</a>
+    </div>
+
+    <div>
+      <img src="https://pbs.twimg.com/profile_images/677875392590426112/yAOKCHEH.png">
+      <a href="https://twitter.com/BeerArkansas" target="_blank">AR Craft Beer News</a>
+    </div>
   </div>
+  <footer>
+    
+  </footer>
+
 </div>

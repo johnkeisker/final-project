@@ -2,165 +2,172 @@
   background: url("https://roguefarmsblog.files.wordpress.com/2012/08/lotsa-hops.jpg");
   background-size: cover;
   overflow: hidden; }
-
-.back-face-p {
-  font-size: 18px;
-  line-height: 1.4;
-  margin-top: 10px;
-  color: black;
-  text-shadow: none;
-  overflow-y: scroll;
-  height: 90%; }
-
-header, footer {
-  margin-top: 5px;
-  margin-left: 5px;
-  margin-right: 5px;
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  height: 50px;
-  clear: both;
-  overflow: hidden;
-  zoom: 1; }
-  header a, footer a {
-    float: left;
-    text-decoration: none;
+  .detail .back-face-p {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-top: 10px;
+    color: black;
+    text-shadow: none;
+    overflow-y: scroll;
+    height: 90%; }
+  .detail header, .detail footer {
+    width: 95%;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    height: 85px;
+    clear: both;
+    overflow: hidden;
+    zoom: 1; }
+    .detail header #back, .detail footer #back {
+      outline: none;
+      float: left;
+      text-decoration: none;
+      font-style: Verdana;
+      font-weight: bolder;
+      color: white;
+      background-color: silver;
+      font-size: 10px;
+      margin-top: 10px;
+      height: 40px; }
+    .detail header h1, .detail footer h1 {
+      margin-top: 10px;
+      font-family: Verdana;
+      font-size: 30px;
+      text-shadow: 3px 3px 3px black;
+      font-weight: bold;
+      color: #6699ff; }
+    .detail header button, .detail footer button {
+      outline: none;
+      font-family: Verdana;
+      font-size: 12px;
+      background-color: red;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 5px 5px 5px;
+      box-shadow: 3px 3px 3px black;
+      float: right; }
+  .detail .brewery-info {
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    width: 95%;
+    background-color: lightgray;
+    background: rgba(0, 0, 0, 0.4);
     color: white;
-    font-style: Verdana;
-    font-weight: bold; }
-  header h1, footer h1 {
+    border-radius: 5px;
+    padding: 5px 2px 5px 2px;
+    font-size: 15px; }
+  .detail .beer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 0 auto; }
+  .detail #f1_container {
+    text-shadow: 3px 3px 3px black;
     font-family: Verdana;
-    font-size: 20px;
-    text-shadow: 3px 3px 3px silver;
-    font-weight: bold;
-    color: #000080; }
-  header button, footer button {
-    float: right; }
-
-.brewery-info {
-  margin-left: 5px;
-  text-align: center;
-  width: 95%; }
-
-.beer-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 95%;
-  margin: 0 auto; }
-
-#f1_container {
-  text-shadow: 3px 3px 3px black;
-  font-family: Verdana;
-  font-size: 15px;
-  position: relative;
-  margin: .8em;
-  width: 100%;
-  height: 350px;
-  z-index: 1;
-  -webkit-perspective: 1000; }
-  @media screen and (min-width: 650px) {
-    #f1_container {
-      width: 30%; } }
-
-.face.back {
-  display: none; }
-
-#f1_card {
-  width: 100%;
-  height: 100%;
-  -webkit-transform-style: preserve-3d;
-  -webkit-transition: all .8s ease-in-out;
-  -webkit-box-shadow: 5px 5px 5px gray; }
-
-#f1_container:hover #f1_card {
-  -webkit-transform: rotateY(180deg);
-  -webkit-box-shadow: -2px 2px 2px #aaa; }
-
-.face {
-  background-size: 100px;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; }
-  .face h2 {
-    color: white;
+    font-size: 15px;
+    position: relative;
+    margin: .8em;
+    width: 100%;
+    height: 350px;
+    z-index: 1;
+    -webkit-perspective: 1000; }
+    @media screen and (min-width: 650px) {
+      .detail #f1_container {
+        width: 30%; } }
+  .detail .face.back {
+    display: none; }
+  .detail #f1_card {
+    width: 100%;
+    height: 100%;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: all .8s ease-in-out;
+    -webkit-box-shadow: 5px 5px 5px gray; }
+  .detail #f1_container:hover #f1_card {
+    -webkit-transform: rotateY(180deg);
+    -webkit-box-shadow: -2px 2px 2px #aaa; }
+  .detail .face {
     position: absolute;
     width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; }
+    .detail .face h2 {
+      color: white;
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%); }
+  .detail .face.front {
+    background-image: url("http://austinwholebodyhealth.com/wp-content/uploads/2015/06/Dollarphotoclub_62327273.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+  .detail .face.back {
+    font-size: 12px;
+    display: block;
+    -webkit-transform: rotateY(180deg);
+    -webkit-box-sizing: border-box;
+    padding: 10px;
+    color: white;
     text-align: center;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%); }
-  .face img {
-    width: 100%;
-    height: 100%; }
+    background-color: lightgray;
+    border: 1px solid #f2f2f2; }
+    .detail .face.back p {
+      text-align: left; }
 
-.face.back {
-  font-size: 12px;
-  display: block;
-  -webkit-transform: rotateY(180deg);
-  -webkit-box-sizing: border-box;
-  padding: 10px;
-  color: white;
-  text-align: center;
-  background-color: lightgray;
-  border: 1px solid #f2f2f2; }
-  .face.back p {
-    text-align: left; }
-
-.login h1 {
-  display: inline-block;
-  margin-top: 50px;
-  color: white;
-  border-top: solid 5px white;
-  border-bottom: solid 5px white;
-  transform: skew(0, -5deg); }
-
-.login section {
-  background-color: #FC6E51; }
-
-.login #action {
-  margin: 0 auto;
-  width: 700px;
-  position: relative;
-  height: 300px; }
-
-.login #keg {
-  position: absolute;
-  height: 200px;
-  width: 70px;
-  background-color: #656D78;
-  border-right: solid 20px #434A54;
-  bottom: 0;
-  left: 310px; }
-
-.login #pipe {
-  position: absolute;
-  height: 30px;
-  width: 10px;
-  top: 30px;
-  left: 10px;
-  background-color: #CCD1D9; }
-
-.login #pipe:before {
-  position: absolute;
-  display: block;
-  content: " ";
-  height: 20px;
-  width: 30px;
-  top: -5px;
-  left: 5px;
-  background: linear-gradient(to bottom, #CCD1D9 50%, #AAB2BD 50%);
-  border-radius: 0 10px 10px 0; }
-
-.login #pipe:after {
-  position: absolute;
-  display: block;
-  content: " ";
-  width: 10px;
-  background-color: rgba(255, 206, 84, 0.5);
-  animation: flow 5s ease infinite; }
+.login {
+  background-image: url("http://tap42.com/wp-content/themes/webdiner/images/home-table.jpg");
+  height: 100vh;
+  width: 100vw; }
+  .login section {
+    background-image: url("http://www.dctc.edu/DCTC/cache/file/A756494E-155D-3050-0C586B7984880F82.jpg");
+    background-repeat: no-repeat;
+    border-bottom: 3px solid black; }
+  .login #action {
+    margin: 0 auto;
+    width: 700px;
+    position: relative;
+    height: 300px; }
+  .login #keg {
+    position: absolute;
+    height: 200px;
+    width: 70px;
+    background-color: #656D78;
+    border-right: solid 20px #434A54;
+    bottom: 0;
+    left: 310px; }
+  .login #pipe {
+    position: absolute;
+    height: 30px;
+    width: 10px;
+    top: 30px;
+    left: 10px;
+    background-color: #CCD1D9; }
+  .login #pipe:before {
+    position: absolute;
+    display: block;
+    content: " ";
+    height: 20px;
+    width: 30px;
+    top: -5px;
+    left: 5px;
+    background: linear-gradient(to bottom, #CCD1D9 50%, #AAB2BD 50%);
+    border-radius: 0 10px 10px 0; }
+  .login #pipe:after {
+    position: absolute;
+    display: block;
+    content: " ";
+    width: 10px;
+    background-color: rgba(255, 206, 84, 0.5);
+    animation: flow 5s ease infinite; }
 
 @keyframes flow {
   0%, 15% {
@@ -177,49 +184,45 @@ header, footer {
   60%, 100% {
     top: 70px;
     height: 0px; } }
-
-.login #pipe-front {
-  position: absolute;
-  height: 14px;
-  width: 14px;
-  top: 25px;
-  left: 5px;
-  background-color: #F5F7FA;
-  border-radius: 10px;
-  border: solid 3px #CCD1D9; }
-
-.login #pipe-handle {
-  transform-origin: center bottom;
-  position: absolute;
-  width: 0;
-  height: 5px;
-  top: -20px;
-  left: 5px;
-  border-style: solid;
-  border-width: 50px 10px 0 10px;
-  border-color: black transparent transparent transparent;
-  animation: handle 5s ease infinite; }
-
-.login #pipe-handle:before {
-  position: absolute;
-  top: -60px;
-  left: -10px;
-  display: block;
-  content: ' ';
-  width: 20px;
-  height: 10px;
-  background-color: #CCD1D9;
-  border-radius: 5px 5px 0 0; }
-
-.login #pipe-handle:after {
-  position: absolute;
-  top: -20px;
-  left: -5px;
-  display: block;
-  content: ' ';
-  width: 10px;
-  height: 20px;
-  background-color: #CCD1D9; }
+  .login #pipe-front {
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    top: 25px;
+    left: 5px;
+    background-color: #F5F7FA;
+    border-radius: 10px;
+    border: solid 3px #CCD1D9; }
+  .login #pipe-handle {
+    transform-origin: center bottom;
+    position: absolute;
+    width: 0;
+    height: 5px;
+    top: -20px;
+    left: 5px;
+    border-style: solid;
+    border-width: 50px 10px 0 10px;
+    border-color: black transparent transparent transparent;
+    animation: handle 5s ease infinite; }
+  .login #pipe-handle:before {
+    position: absolute;
+    top: -60px;
+    left: -10px;
+    display: block;
+    content: ' ';
+    width: 20px;
+    height: 10px;
+    background-color: #CCD1D9;
+    border-radius: 5px 5px 0 0; }
+  .login #pipe-handle:after {
+    position: absolute;
+    top: -20px;
+    left: -5px;
+    display: block;
+    content: ' ';
+    width: 10px;
+    height: 20px;
+    background-color: #CCD1D9; }
 
 @keyframes handle {
   0%, 10% {
@@ -228,15 +231,14 @@ header, footer {
     transform: rotate(-90deg); }
   60%, 100% {
     transform: rotate(0deg); } }
-
-.login .glass {
-  position: absolute;
-  height: 100px;
-  width: 70px;
-  bottom: 0;
-  background-color: rgba(255, 255, 255, 0);
-  border-radius: 5px;
-  animation: slide 5s ease forwards infinite; }
+  .login .glass {
+    position: absolute;
+    height: 100px;
+    width: 70px;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 5px;
+    animation: slide 5s ease forwards infinite; }
 
 @keyframes slide {
   0% {
@@ -248,55 +250,49 @@ header, footer {
   100% {
     opacity: 0;
     left: 600px; } }
-
-.login .front-glass {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 5px; }
-
-.login .beer {
-  position: absolute;
-  bottom: 15px;
-  margin: 0 5px;
-  /*height: 80%;*/
-  width: 60px;
-  background-color: rgba(255, 206, 84, 0.8);
-  /* #FFCE54*/
-  border-radius: 0 0 5px 5px;
-  border-top: solid 0px rgba(255, 206, 84, 0.8);
-  animation: fillup 5s ease infinite; }
-
-.login .beer:after {
-  position: absolute;
-  display: block;
-  content: " ";
-  /*height: 20px;*/
-  width: 100%;
-  background-color: white;
-  /*top: -20px;*/
-  border-radius: 5px 5px 0 0;
-  animation: fillupfoam 5s linear infinite, wave 0.5s alternate infinite; }
-
-.login .handle {
-  position: absolute;
-  right: -20px;
-  top: 20px; }
-
-.login .handle .top-right {
-  height: 20px;
-  width: 10px;
-  border-top: solid 10px rgba(255, 255, 255, 0.4);
-  border-right: solid 10px rgba(255, 255, 255, 0.4);
-  border-top-right-radius: 20px; }
-
-.login .handle .bottom-right {
-  height: 20px;
-  width: 10px;
-  border-bottom: solid 10px rgba(255, 255, 255, 0.4);
-  border-right: solid 10px rgba(255, 255, 255, 0.4);
-  border-bottom-right-radius: 20px; }
+  .login .front-glass {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px; }
+  .login .beer {
+    position: absolute;
+    bottom: 15px;
+    margin: 0 5px;
+    /*height: 80%;*/
+    width: 60px;
+    background-color: rgba(255, 206, 84, 0.8);
+    /* #FFCE54*/
+    border-radius: 0 0 5px 5px;
+    border-top: solid 0px rgba(255, 206, 84, 0.8);
+    animation: fillup 5s ease infinite; }
+  .login .beer:after {
+    position: absolute;
+    display: block;
+    content: " ";
+    /*height: 20px;*/
+    width: 100%;
+    background-color: white;
+    /*top: -20px;*/
+    border-radius: 5px 5px 0 0;
+    animation: fillupfoam 5s linear infinite, wave 0.5s alternate infinite; }
+  .login .handle {
+    position: absolute;
+    right: -20px;
+    top: 20px; }
+  .login .handle .top-right {
+    height: 20px;
+    width: 10px;
+    border-top: solid 10px rgba(255, 255, 255, 0.4);
+    border-right: solid 10px rgba(255, 255, 255, 0.4);
+    border-top-right-radius: 20px; }
+  .login .handle .bottom-right {
+    height: 20px;
+    width: 10px;
+    border-bottom: solid 10px rgba(255, 255, 255, 0.4);
+    border-right: solid 10px rgba(255, 255, 255, 0.4);
+    border-bottom-right-radius: 20px; }
 
 @keyframes fillup {
   0%, 20% {
@@ -321,31 +317,91 @@ header, footer {
     transform: skew(0, -3deg); }
   to {
     transform: skew(0, 3deg); } }
+  .login form {
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    transform: translatex(-50%); }
+  .login .form-group {
+    background-position: center;
+    text-align: center;
+    margin: 0px auto;
+    border-radius: 5px; }
+    .login .form-group input {
+      border: none;
+      box-shadow: 5px 5px 5px black;
+      background-color: #529ECC;
+      outline: none;
+      text-align: center;
+      border-radius: 5px;
+      padding: 20px 5px 10px 5px;
+      width: 350px; }
+    .login .form-group ::-webkit-input-placeholder {
+      color: white;
+      font-size: 20px;
+      font-family: Verdana; }
+  .login button {
+    color: white;
+    background-color: red;
+    outline: none;
+    font-size: 20px;
+    font-family: Verdana;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: block;
+    background-position: center;
+    width: 100px;
+    text-align: center;
+    margin: 20px auto; }
 
 .register {
-  padding-top: 200px;
-  height: 800px;
+  height: 100vh;
   width: 100%;
   background-position: center;
   background-image: url("https://parkstreetgrille.files.wordpress.com/2016/02/beertaps-1.jpg");
   background-repeat: no-repeat; }
-
-.form-group {
-  background-position: center;
-  text-align: center;
-  margin: 0px auto;
-  border-radius: 5px; }
-  .form-group input {
-    background-color: #529ECC;
+  .register form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .register .form-group {
+    background-position: center;
     text-align: center;
+    margin: 0px auto;
+    border-radius: 5px; }
+    .register .form-group input {
+      border: none;
+      box-shadow: 5px 5px 5px black;
+      background-color: #529ECC;
+      outline: none;
+      text-align: center;
+      border-radius: 5px;
+      padding: 20px 5px 20px 5px;
+      width: 200px; }
+    .register .form-group ::-webkit-input-placeholder {
+      color: white;
+      font-size: 20px;
+      font-family: Verdana; }
+  .register button {
+    color: white;
+    background-color: red;
+    outline: none;
+    font-size: 20px;
+    font-family: Verdana;
+    border: none;
     border-radius: 5px;
-    padding: 10px 5px 10px 5px;
-    width: 200px; }
-  .form-group .button {
+    box-shadow: 5px 5px 5px black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: block;
     background-position: center;
     width: 200px;
     text-align: center;
-    margin: 0px auto; }
+    margin: 20px auto; }
 
 .home {
   height: 800px;
@@ -353,17 +409,18 @@ header, footer {
   background-position: center;
   background-image: url("http://hrgrowler.com/wp-content/uploads/2015/11/craft-beer-cheers.jpg"); }
   .home .title {
-    padding-top: 200px; }
+    padding-top: 250px; }
   .home h1 {
     color: white;
     text-align: center;
-    font-family: Verdana; }
+    font-family: Verdana;
+    text-shadow: 5px 5px 5px black; }
   .home p {
     color: white;
     text-shadow: 5px 5px 5px black;
     text-align: center;
     font-family: Verdana;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold; }
   .home a {
     text-decoration: none;
@@ -378,7 +435,8 @@ header, footer {
     padding: 10px 5px 10px 5px;
     text-align: center;
     margin: 50px auto;
-    border-radius: 5px; }
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px black; }
   .home .home--link2 {
     background-color: #DBDBDE;
     background-position: center;
@@ -386,7 +444,8 @@ header, footer {
     padding: 10px 5px 10px 5px;
     text-align: center;
     margin: 0 auto;
-    border-radius: 5px; }
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px black; }
 
 * {
   margin: 0; }
@@ -452,3 +511,29 @@ header, footer {
   .list li {
     text-align: center;
     font-family: Verdana; }
+  .list #map {
+    border: 3px solid black;
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 1650px;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .list .social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .list .social a {
+      text-align: center;
+      display: block; }
+    .list .social img {
+      width: 250px;
+      width: 256px;
+      height: 256px;
+      border: 2px solid black;
+      box-shadow: 5px 5px 5px gray;
+      margin: 50px 25px 5px 25px; }
+  .list footer {
+    height: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px; }

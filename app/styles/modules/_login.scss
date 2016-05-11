@@ -1,15 +1,16 @@
 .login {
-  h1 {
-      display: inline-block;
-      margin-top: 50px;
-      color: white;
-      border-top: solid 5px white;
-      border-bottom: solid 5px white;
-      transform: skew(0, -5deg);
-  }
+  background-image: url("http://tap42.com/wp-content/themes/webdiner/images/home-table.jpg");
+  height: 100vh;
+  width: 100vw;
+
+
   section {
-       background-color: #FC6E51;
+      //  background-color: #FC6E51;
+      background-image: url("http://www.dctc.edu/DCTC/cache/file/A756494E-155D-3050-0C586B7984880F82.jpg");
+      background-repeat: no-repeat;
+      border-bottom: 3px solid black;
   }
+
   #action {
       margin: 0 auto;
       width: 700px;
@@ -246,6 +247,60 @@
       to {
           transform: skew(0, 3deg);
       }
+  }
+
+  form {
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    transform: translatex(-50%);
+
+
+  }
+  .form-group {
+    background-position: center;
+    text-align: center;
+    margin: 0px auto;
+    border-radius: 5px;
+
+
+
+
+    input {
+      border: none;
+      box-shadow: 5px 5px 5px black;
+      background-color: #529ECC;
+      outline: none;
+      text-align: center;
+      border-radius: 5px;
+      padding: 20px 5px 10px 5px;
+      width: 350px;
+    }
+
+    ::-webkit-input-placeholder {
+      color: white;
+      font-size: 20px;
+      font-family: Verdana;
+
+    }
+  }
+
+  button {
+    color: white;
+    background-color: red;
+    outline: none;
+    font-size: 20px;
+    font-family: Verdana;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: block;
+    background-position: center;
+    width: 100px;
+    text-align: center;
+    margin: 20px auto;
   }
 
 }

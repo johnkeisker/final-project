@@ -1,6 +1,5 @@
 .register {
-  padding-top: 200px;
-  height: 800px;
+  height: 100vh;
   width: 100%;
   background-position: center;
   background-image: url("https://parkstreetgrille.files.wordpress.com/2016/02/beertaps-1.jpg");
@@ -8,28 +7,55 @@
   @media screen and (min-width: 650px) {
   }
 
-}
-
-.form-group {
-  background-position: center;
-  text-align: center;
-  margin: 0px auto;
-  border-radius: 5px;
-
-
-
-  input {
-    background-color: #529ECC;
-    text-align: center;
-    border-radius: 5px;
-    padding: 10px 5px 10px 5px;
-    width: 200px;
-
+  form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
-  .button {
+
+  .form-group {
+    background-position: center;
+    text-align: center;
+    margin: 0px auto;
+    border-radius: 5px;
+
+
+
+    input {
+      border: none;
+      box-shadow: 5px 5px 5px black;
+      background-color: #529ECC;
+      outline: none;
+      text-align: center;
+      border-radius: 5px;
+      padding: 20px 5px 20px 5px;
+      width: 200px;
+    }
+
+    ::-webkit-input-placeholder {
+      color: white;
+      font-size: 20px;
+      font-family: Verdana;
+
+    }
+  }
+
+  button {
+    color: white;
+    background-color: red;
+    outline: none;
+    font-size: 20px;
+    font-family: Verdana;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: block;
     background-position: center;
     width: 200px;
     text-align: center;
-    margin: 0px auto;
+    margin: 20px auto;
   }
 }

@@ -1,8 +1,8 @@
 
 <div class="detail">
   <header>
-    <a ui-sref="breweries">Go Back</a>
-    <h1>{{ detailCtrl.brewery.info.name }}<h1>
+    <button id="back" ui-sref="breweries">Go Back</button>
+    <h1 ng-bind-html="detailCtrl.brewery.info.name"><h1>
     <button name="button">Favorite</button>
   </header>
   <div class="brewery-info">
@@ -13,7 +13,6 @@
       <div id="f1_card" class="shadow">
     		<div class="front face">
           <h2>{{ beer.name }}</h2>
-    			<img src="http://static4.businessinsider.com/image/52618ae6eab8ea5e658062e2/is-draft-beer-better-than-bottled-beer.jpg"/>
     		</div>
     		<div class="back face">
           <p style="font-weight: bold; margin-top: 5px; text-align: center; color: red; text-shadow: none;">{{ beer.style.abvMax }} % Alcohol by Volume</p>

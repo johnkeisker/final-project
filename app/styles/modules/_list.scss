@@ -83,4 +83,41 @@
     text-align: center;
     font-family: Verdana;
   }
+  #map {
+    border: 3px solid black;
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 1650px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .social {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    a {
+    text-align: center;
+    display: block;
+    }
+
+    img {
+    width: 250px;
+    width: 256px;
+    height: 256px;
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px gray;
+    margin: 50px 25px 5px 25px;
+    }
+  }
+  footer {
+    height: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+
 }
