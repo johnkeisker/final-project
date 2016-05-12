@@ -13,6 +13,7 @@ class BreweryListController {
       .isLoggedIn()
       .then((response) => {
         this.user = response;
+        this._BreweryService.login(this.user);
         this._BreweryService.all()
           .then((response) => {
             this.breweries = response;
@@ -30,6 +31,9 @@ class BreweryListController {
     this.map.showInfoWindow('brewery_window', `brewery_${brewery.id}`);
   }
 
+  isFavorite(brewery) {
+    return this._BreweryService.isFavorite(brewery.brewery.id);
+  }
 
 }
 

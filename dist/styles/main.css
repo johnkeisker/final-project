@@ -336,11 +336,14 @@
       border-radius: 5px;
       padding: 20px 5px 10px 5px;
       width: 350px;
-      text-shadow: 3px 3px 3px black; }
-    .login .form-group ::-webkit-input-placeholder {
+      text-shadow: 3px 3px 3px #CCD1D9;
       color: white;
+      font-size: 20px; }
+    .login .form-group ::-webkit-input-placeholder {
+      color: #656D78;
       font-size: 20px;
-      font-family: Verdana; }
+      font-family: Verdana;
+      font-weight: bold; }
   .login button {
     color: white;
     background-color: red;
@@ -384,7 +387,7 @@
       text-align: center;
       border-radius: 5px;
       padding: 10px 5px 10px 5px;
-      width: 400px;
+      width: 350px;
       font-size: 20px;
       color: white;
       font-family: Verdana; }
@@ -464,6 +467,12 @@
 .list {
   background-color: #DBDBDE;
   background-image: url("http://medialoot-medialootinc.netdna-ssl.com/images/thumbs/1600x1036_Vector-City-Maps-Preview-1.jpg"); }
+  .list .favorite .brewery--logo {
+    width: 256px;
+    height: 256px;
+    border: 10px solid #ffff00;
+    box-shadow: 5px 5px 5px gray;
+    margin: 10px auto; }
   .list header {
     border-bottom: 2px solid black;
     width: 100vw;
@@ -474,7 +483,7 @@
     background-position: center;
     position: relative; }
   .list .title {
-    font-size: 100px;
+    font-size: 130px;
     font-family: cursive;
     font-weight: bold;
     color: white;
@@ -486,15 +495,15 @@
     transform: translate(-50%, -50%); }
     @media screen and (min-width: 650px) {
       .list .title {
-        left: 25%; } }
+        left: 30%; } }
   .list .breweries {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background: url("http://i4.mirror.co.uk/incoming/article5006144.ece/ALTERNATES/s615/Pint-of-Beer.jpg");
+    background: url("http://s3.amazonaws.com/digitaltrends-uploads-prod/2013/12/beer-foam1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    border-bottom: 2px solid black; }
+    border-bottom: 2px solid gray; }
   .list .brewery {
     margin: 50px 25px;
     float: left; }
@@ -508,14 +517,16 @@
     text-align: center;
     width: 250px; }
   .list .a1 {
+    font-size: 15px;
     color: #c0c0c0;
     text-shadow: 3px 3px 3px black; }
   .list a {
+    font-size: 20px;
     font-family: Verdana;
     text-align: center;
     font-weight: bold;
     text-decoration: none;
-    color: blue; }
+    color: #0066ff; }
   .list ul {
     color: white;
     list-style: none;
@@ -523,23 +534,28 @@
     padding: 0; }
   .list li {
     text-align: center;
-    font-family: Verdana; }
-  .list #map {
-    border: 2px solid black;
+    font-family: Verdana;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px black; }
+  .list .map-container {
     margin-top: 20px;
-    width: 80%;
-    margin-left: 40px;
-    border-radius: 5px;
-    box-shadow: 5px 5px 5px gray; }
+    width: 100%; }
+    .list .map-container .inner-map {
+      border: 2px solid black;
+      box-shadow: 5px 5px 5px gray;
+      border-radius: 5px;
+      width: 80%;
+      margin: 0 auto; }
   .list span {
     font-weight: bold;
     font-family: Verdana;
     color: black; }
   .list .social {
-    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; }
+    justify-content: space-between;
+    width: 84%;
+    margin: 20px auto; }
     .list .social a {
       text-align: center;
       display: block; }
@@ -551,7 +567,73 @@
       margin: 5px 25px 5px 25px;
       border-radius: 5px; }
   .list footer {
-    height: 250px;
+    height: 300px;
     margin-top: 20px;
     border-top: 2px solid gray;
-    background-color: lightgray; }
+    background-color: #304457; }
+  .list .links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 25%;
+    margin: 20px auto; }
+    .list .links i {
+      color: #ECF0F1; }
+  .list .cover {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid #ccc;
+    float: left;
+    margin: 20px;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    /* Firefox 4 */
+    -webkit-transition: all 1s;
+    /* Safari and Chrome */
+    -o-transition: all 1s;
+    /* Opera */ }
+  .list .cover:hover {
+    border-color: #ccc; }
+  .list .box3d {
+    width: 100%;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: all 1s;
+    -webkit-transition: all 1000ms cubic-bezier(0.175, 0.885, 0.32, 1);
+    /* older webkit */
+    -webkit-transition: all 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: all 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: all 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    /* easeOutBack */
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d; }
+  .list .box3d:first-child {
+    text-align: right;
+    -webkit-transform: rotateY(180deg);
+    /* Safari and Chrome */
+    -moz-transform: rotateY(180deg); }
+  .list .cover:hover .box3d {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    /* Safari and Chrome */
+    -moz-transform: rotateY(180deg);
+    /* Firefox */ }
+  .list .cover:hover .box3d:first-child {
+    z-index: 1;
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    /* Safari and Chrome */
+    -moz-transform: rotateY(0deg); }
+  .list .pic1 {
+    background: url("http://www.placecage.com/gif/200/200") no-repeat center center; }
+  .list .pic2 {
+    background: url("../assets/2013-09-19 18.14.46.jpg") no-repeat center center; }

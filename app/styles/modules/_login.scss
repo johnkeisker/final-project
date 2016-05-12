@@ -275,13 +275,16 @@
       border-radius: 5px;
       padding: 20px 5px 10px 5px;
       width: 350px;
-      text-shadow: 3px 3px 3px black;
+      text-shadow: 3px 3px 3px #CCD1D9;
+      color: white;
+      font-size: 20px;
     }
 
     ::-webkit-input-placeholder {
-      color: white;
+      color: #656D78;
       font-size: 20px;
       font-family: Verdana;
+      font-weight: bold;
 
     }
   }

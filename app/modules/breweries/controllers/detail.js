@@ -8,6 +8,7 @@ class BreweryDetailController {
       .isLoggedIn()
       .then((response) => {
         this.user = response;
+        this._BreweryService.login(this.user);
         this._BreweryService.get($stateParams.id)
           .then((response) => {
             this.brewery = response;
@@ -18,6 +19,18 @@ class BreweryDetailController {
         this._$state.go("login")
       });
 
+  }
+
+  isFavorite() {
+    return this._BreweryService.isFavorite(this.brewery.info.id);
+  }
+
+  favoriteBrewery() {
+    this._BreweryService.favorite(this.brewery);
+  }
+
+  unfavoriteBrewery() {
+    this._BreweryService.unfavorite(this.brewery);
   }
 }
 

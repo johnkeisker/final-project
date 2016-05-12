@@ -1,8 +1,16 @@
 class BreweryService {
-  constructor($http, $q) {
+  constructor($http, $q, $firebaseArray, UserService) {
     this._$q = $q;
     this._$http = $http;
+    this._$firebaseArray = $firebaseArray;
+    this._UserService = UserService;
     this.baseUrl = 'https://dry-wave-65036.herokuapp.com';
+
+  }
+
+  login(user) {
+    this.user = user;
+    this.firebase_breweries = this._$firebaseArray(this._UserService.ref.child('users').child(this.user.uid).child('breweries'));
   }
 
   all() {
@@ -57,6 +65,32 @@ class BreweryService {
         });
     });
 
+  }
+
+  favorite(brewery) {
+    this.firebase_breweries.$add(brewery);
+  }
+
+  unfavorite(brewery) {
+    this.firebase_breweries.forEach((firebase_brewery) => {
+      if (brewery.id === firebase_brewery.id) {
+        this.firebase_breweries.$remove(firebase_brewery);
+      }
+    });
+  }
+
+  isFavorite(brewery_id) {
+    let favorite = false;
+
+    if (this.firebase_breweries !== undefined && this.firebase_breweries.length > 0) {
+      this.firebase_breweries.forEach((firebase_brewery) => {
+        if (brewery_id === firebase_brewery.info.id) {
+          favorite = true;
+        }
+      });
+    }
+
+    return favorite;
   }
 
 }

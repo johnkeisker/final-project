@@ -1,10 +1,10 @@
-<div class="list">
+<div id="top" class="list">
   <header>
     <div class="title">Local Brews</div>
   </header>
 
   <div class="breweries">
-    <div class="brewery" ng-repeat="brewery in listCtrl.breweries">
+    <div class="brewery" ng-class="{ 'favorite': listCtrl.isFavorite(brewery) }" ng-repeat="brewery in listCtrl.breweries">
       <div class="brewery--logo">
         <a ui-sref="brewery({ id: brewery.breweryId })">
           <img ng-src="{{ brewery.brewery.images.squareMedium }}">
@@ -28,13 +28,12 @@
     </div>
   </div>
 
-  <div id="map">
-    <ng-map default-style="true" center="-25.363882,131.044922" zoom="4" zoom-to-include-markers="true">
-      <marker id="brewery_{{ brewery.id }}" position="{{ brewery.latitude }}, {{ brewery.longitude }}" title="{{ brewery.brewery.name}}" ng-repeat="brewery in listCtrl.breweries"
-        on-click="listCtrl.showWindow(brewery)"></marker>
+  <div class="map-container" id="map">
+    <ng-map class="inner-map" default-style="true" center="-25.363882,131.044922" zoom="4" zoom-to-include-markers="true">
+      <marker id="brewery_{{ brewery.id }}" position="{{ brewery.latitude }}, {{ brewery.longitude }}" title="{{ brewery.brewery.name}}" ng-repeat="brewery in listCtrl.breweries" on-click="listCtrl.showWindow(brewery)"></marker>
       <info-window id="brewery_window">
         <div ng-non-bindable="">
-          <span ng-bind-html="listCtrl.map.brewery.brewery.name"></span>
+          <span ng-bind-html="listCtrl.map.brewery.brewery.name"></span><br>
           {{ listCtrl.map.brewery.streetAddress }}<br>
           {{ listCtrl.map.brewery.locality }}<br>
           {{ listCtrl.map.brewery.region }}<br>
@@ -47,32 +46,66 @@
   </div>
   <br>
 
+  <div class="social">
+    <div>
+      <a href="https://twitter.com/LRBrewBus" target="_blank">
+        <img src="http://media1.fdncms.com/arktimes/imager/get-ready-to-hop-aboard-the-little-rock-br/u/original/3654180/lrbrewbus.png">
+      </a>
+      <a href="https://twitter.com/LRBrewBus" target="_blank">LRBrewBus</a>
+    </div>
 
-    <div class="social">
-      <div>
-        <a href="https://twitter.com/LRBrewBus" target="_blank">
-          <img src="http://media1.fdncms.com/arktimes/imager/get-ready-to-hop-aboard-the-little-rock-br/u/original/3654180/lrbrewbus.png">
+    <div>
+      <a href="https://twitter.com/ARBrewersGuild" target="_blank">
+        <img src="https://pbs.twimg.com/profile_images/717726019549945856/8ZlgxyKU.jpg">
+      </a>
+      <a href="https://twitter.com/ARBrewersGuild" target="_blank">Arkansas Brewers Guild</a>
+    </div>
+
+    <div>
+      <a href="https://twitter.com/BeerArkansas" target="_blank">
+        <img src="https://pbs.twimg.com/profile_images/677875392590426112/yAOKCHEH.png">
+      </a>
+      <a href="https://twitter.com/BeerArkansas" target="_blank">AR Craft Beer News</a>
+    </div>
+  </div>
+
+  <footer>
+    <container class="links">
+      <div class="email">
+        <a href="mailto:jkeisker@me.com" target="_blank">
+          <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
         </a>
-        <a href="https://twitter.com/LRBrewBus" target="_blank">LRBrewBus</a>
+      </div>
+      <div class="github">
+        <a href="https://github.com/johnkeisker" target="_blank">
+          <i class="fa fa-github-square fa-2x" aria-hidden="true"></i>
+        </a>
+      </div>
+      <div class="linkdin">
+        <a href="https://www.linkedin.com/in/john-keisker-116441102?trk=nav_responsive_tab_profile" target="_blank">
+          <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+        </a>
       </div>
 
-      <div>
-        <a href="https://twitter.com/ARBrewersGuild" target="_blank">
-          <img src="https://pbs.twimg.com/profile_images/717726019549945856/8ZlgxyKU.jpg">
-        </a>
-        <a href="https://twitter.com/ARBrewersGuild" target="_blank">Arkansas Brewers Guild</a>
-      </div>
+      <a data-scroll href="#top">
+        <i class="fa fa-arrow-circle-up"></i>
+      </a>
+      
+    </container>
 
-      <div>
-        <a href="https://twitter.com/BeerArkansas" target="_blank">
-          <img src="https://pbs.twimg.com/profile_images/677875392590426112/yAOKCHEH.png">
-        </a>
-        <a href="https://twitter.com/BeerArkansas" target="_blank">AR Craft Beer News</a>
+
+
+
+    <div class="cover">
+      <div class="box3d pic1">
+        &nbsp;
+      </div>
+      <div class="box3d pic2">
+        &nbsp;
       </div>
     </div>
 
-    <footer></footer>
 
-
+  </footer>
 
 </div>

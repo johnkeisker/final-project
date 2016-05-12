@@ -1,9 +1,11 @@
 
-<div class="detail">
+<div class="detail" ng-class="{ 'favorite': detailCtrl.isFavorite() }">
   <header>
     <button id="back" ui-sref="breweries">Go Back</button>
     <h1 ng-bind-html="detailCtrl.brewery.info.name"><h1>
-    <button name="button">Favorite</button>
+
+    <button ng-click="detailCtrl.favoriteBrewery()" ng-hide="detailCtrl.isFavorite()">Favorite</button>
+    <button ng-click="detailCtrl.unfavoriteBrewery()" ng-show="detailCtrl.isFavorite()">Unfavorite</button>
   </header>
   <div class="brewery-info">
     <h3>{{ detailCtrl.brewery.info.description }}</h3>
