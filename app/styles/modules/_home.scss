@@ -36,7 +36,6 @@
     font-family: Verdana;
   }
   .home--link1 {
-
     background-color: #529ECC;
     background-position: center;
     width: 200px;
@@ -45,10 +44,11 @@
     margin: 50px auto;
     border-radius: 5px;
     box-shadow: 3px 3px 3px black;
+    text-shadow: 3px 3px 3px black;
   }
   .home--link2 {
 
-    background-color: #DBDBDE;
+    background-color: #529ECC;
     background-position: center;
     width: 200px;
     padding: 10px 5px 10px 5px;
@@ -56,5 +56,6 @@
     margin: 0 auto;
     border-radius: 5px;
     box-shadow: 3px 3px 3px black;
+    text-shadow: 3px 3px 3px black;
   }
 }

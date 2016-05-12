@@ -4,7 +4,7 @@
 
 .list {
   background-color: #DBDBDE;
-
+  background-image: url("http://medialoot-medialootinc.netdna-ssl.com/images/thumbs/1600x1036_Vector-City-Maps-Preview-1.jpg");
   header {
     border-bottom: 2px solid black;
     width: 100vw;
@@ -38,9 +38,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background: url("http://i.investopedia.com/dimages/graphics/thinkstockphotos-480775284.jpg?quality=80&width=680&height=680");
+    background: url("http://i4.mirror.co.uk/incoming/article5006144.ece/ALTERNATES/s615/Pint-of-Beer.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    border-bottom: 2px solid black;
   }
   .brewery {
     margin: 50px 25px;
@@ -58,6 +59,7 @@
   .brewery--info {
     text-align: center;
     width: 250px;
+
   }
   .a1 {
     color: #c0c0c0;
@@ -84,39 +86,44 @@
     font-family: Verdana;
   }
   #map {
-    border: 3px solid black;
-    width: 500px;
-    height: 300px;
-    position: absolute;
-    top: 1650px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    border: 2px solid black;
+    margin-top: 20px;
+    width: 80%;
+    margin-left: 40px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px gray;
+  }
+  span {
+    font-weight: bold;
+    font-family: Verdana;
+    color: black;
   }
 
   .social {
-
+    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
-    a {
+  a {
     text-align: center;
     display: block;
     }
 
-    img {
+  img {
     width: 250px;
-    width: 256px;
-    height: 256px;
+    height: 250px;
     border: 2px solid black;
     box-shadow: 5px 5px 5px gray;
-    margin: 50px 25px 5px 25px;
+    margin: 5px 25px 5px 25px;
+    border-radius: 5px;
     }
   }
   footer {
-    height: 500px;
+    height: 250px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    border-top: 2px solid gray;
+    background-color: lightgray;
   }
 
 

@@ -251,7 +251,7 @@
 
   form {
     position: absolute;
-    top: 350px;
+    top: 400px;
     left: 50%;
     transform: translatex(-50%);
 
@@ -275,6 +275,7 @@
       border-radius: 5px;
       padding: 20px 5px 10px 5px;
       width: 350px;
+      text-shadow: 3px 3px 3px black;
     }
 
     ::-webkit-input-placeholder {
@@ -294,13 +295,15 @@
     border: none;
     border-radius: 5px;
     box-shadow: 5px 5px 5px black;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: block;
     background-position: center;
     width: 100px;
     text-align: center;
     margin: 20px auto;
+    text-shadow: 3px 3px 3px black;
+    font-weight: bold;
   }
 
 }

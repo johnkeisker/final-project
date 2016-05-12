@@ -319,7 +319,7 @@
     transform: skew(0, 3deg); } }
   .login form {
     position: absolute;
-    top: 350px;
+    top: 400px;
     left: 50%;
     transform: translatex(-50%); }
   .login .form-group {
@@ -335,7 +335,8 @@
       text-align: center;
       border-radius: 5px;
       padding: 20px 5px 10px 5px;
-      width: 350px; }
+      width: 350px;
+      text-shadow: 3px 3px 3px black; }
     .login .form-group ::-webkit-input-placeholder {
       color: white;
       font-size: 20px;
@@ -349,13 +350,15 @@
     border: none;
     border-radius: 5px;
     box-shadow: 5px 5px 5px black;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: block;
     background-position: center;
     width: 100px;
     text-align: center;
-    margin: 20px auto; }
+    margin: 20px auto;
+    text-shadow: 3px 3px 3px black;
+    font-weight: bold; }
 
 .register {
   height: 100vh;
@@ -365,7 +368,7 @@
   background-repeat: no-repeat; }
   .register form {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%); }
   .register .form-group {
@@ -380,12 +383,16 @@
       outline: none;
       text-align: center;
       border-radius: 5px;
-      padding: 20px 5px 20px 5px;
-      width: 200px; }
+      padding: 10px 5px 10px 5px;
+      width: 400px;
+      font-size: 20px;
+      color: white;
+      font-family: Verdana; }
     .register .form-group ::-webkit-input-placeholder {
       color: white;
       font-size: 20px;
-      font-family: Verdana; }
+      font-family: Verdana;
+      text-shadow: 3px 3px 3px black; }
   .register button {
     color: white;
     background-color: red;
@@ -395,13 +402,15 @@
     border: none;
     border-radius: 5px;
     box-shadow: 5px 5px 5px black;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: block;
     background-position: center;
-    width: 200px;
+    width: 120px;
     text-align: center;
-    margin: 20px auto; }
+    margin: 20px auto;
+    text-shadow: 3px 3px 3px black;
+    font-weight: bold; }
 
 .home {
   height: 800px;
@@ -436,22 +445,25 @@
     text-align: center;
     margin: 50px auto;
     border-radius: 5px;
-    box-shadow: 3px 3px 3px black; }
+    box-shadow: 3px 3px 3px black;
+    text-shadow: 3px 3px 3px black; }
   .home .home--link2 {
-    background-color: #DBDBDE;
+    background-color: #529ECC;
     background-position: center;
     width: 200px;
     padding: 10px 5px 10px 5px;
     text-align: center;
     margin: 0 auto;
     border-radius: 5px;
-    box-shadow: 3px 3px 3px black; }
+    box-shadow: 3px 3px 3px black;
+    text-shadow: 3px 3px 3px black; }
 
 * {
   margin: 0; }
 
 .list {
-  background-color: #DBDBDE; }
+  background-color: #DBDBDE;
+  background-image: url("http://medialoot-medialootinc.netdna-ssl.com/images/thumbs/1600x1036_Vector-City-Maps-Preview-1.jpg"); }
   .list header {
     border-bottom: 2px solid black;
     width: 100vw;
@@ -479,9 +491,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background: url("http://i.investopedia.com/dimages/graphics/thinkstockphotos-480775284.jpg?quality=80&width=680&height=680");
+    background: url("http://i4.mirror.co.uk/incoming/article5006144.ece/ALTERNATES/s615/Pint-of-Beer.jpg");
     background-repeat: no-repeat;
-    background-size: cover; }
+    background-size: cover;
+    border-bottom: 2px solid black; }
   .list .brewery {
     margin: 50px 25px;
     float: left; }
@@ -512,14 +525,18 @@
     text-align: center;
     font-family: Verdana; }
   .list #map {
-    border: 3px solid black;
-    width: 500px;
-    height: 300px;
-    position: absolute;
-    top: 1650px;
-    left: 50%;
-    transform: translate(-50%, -50%); }
+    border: 2px solid black;
+    margin-top: 20px;
+    width: 80%;
+    margin-left: 40px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px gray; }
+  .list span {
+    font-weight: bold;
+    font-family: Verdana;
+    color: black; }
   .list .social {
+    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
@@ -528,12 +545,13 @@
       display: block; }
     .list .social img {
       width: 250px;
-      width: 256px;
-      height: 256px;
+      height: 250px;
       border: 2px solid black;
       box-shadow: 5px 5px 5px gray;
-      margin: 50px 25px 5px 25px; }
+      margin: 5px 25px 5px 25px;
+      border-radius: 5px; }
   .list footer {
-    height: 500px;
+    height: 250px;
     margin-top: 20px;
-    margin-bottom: 20px; }
+    border-top: 2px solid gray;
+    background-color: lightgray; }
