@@ -22,7 +22,11 @@ class BreweryDetailController {
   }
 
   isFavorite() {
-    return this._BreweryService.isFavorite(this.brewery.info.id);
+    if (this.brewery) {
+      return this._BreweryService.isFavorite(this.brewery.info.id);
+    }
+
+    return false;
   }
 
   favoriteBrewery() {

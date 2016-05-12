@@ -51,11 +51,33 @@ class BreweryService {
 
       this._$q.all(promises)
         .then((response) => {
+
+          let info = response[0].data.data;
+          let location = response[1].data.data[0];
+          let beers = response[2].data.data;
+          let social = response[3].data.data;
+
+          if (info === undefined) {
+            info = null;
+          }
+
+          if (location === undefined) {
+            location = null;
+          }
+
+          if (beers === undefined) {
+            beers = null;
+          }
+
+          if (social === undefined) {
+            social = null;
+          }
+
           let brewery = {
-            info: response[0].data.data,
-            location: response[1].data.data[0],
-            beers: response[2].data.data,
-            social: response[3].data.data
+            info,
+            location,
+            beers,
+            social
           };
 
           resolve(brewery);
@@ -72,11 +94,15 @@ class BreweryService {
   }
 
   unfavorite(brewery) {
-    this.firebase_breweries.forEach((firebase_brewery) => {
-      if (brewery.id === firebase_brewery.id) {
-        this.firebase_breweries.$remove(firebase_brewery);
-      }
-    });
+
+    if (this.firebase_breweries !== undefined && this.firebase_breweries.length > 0) {
+      this.firebase_breweries.forEach((firebase_brewery) => {
+        if (brewery.info.id === firebase_brewery.info.id) {
+          this.firebase_breweries.$remove(firebase_brewery);
+        }
+      });
+    }
+
   }
 
   isFavorite(brewery_id) {

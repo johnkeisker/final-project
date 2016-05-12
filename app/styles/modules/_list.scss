@@ -10,7 +10,7 @@
     .brewery--logo {
       width: 256px;
       height: 256px;
-      border: 10px solid #ffff00;
+      border: 10px solid #99cc66;
       box-shadow: 5px 5px 5px gray;
       margin: 10px auto;
     }
@@ -145,48 +145,52 @@
     }
   }
   footer {
-    height: 300px;
+    display: flex;
     margin-top: 20px;
     border-top: 2px solid gray;
-    background-color: #304457;
+    // background-color: #304457;
+    background: url('https://static.pexels.com/photos/6546/sky-night-space-trees-large.jpeg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    justify-content: space-between;
+    width: 100%;
 
   }
   .links {
     display: flex;
+    // flex-direction: column;
+    align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 25%;
-    margin:20px auto;
+    width: 80%;
+    margin: 30px auto;
+
 
     i {
       color: #ECF0F1;
+      margin-left: 50px;
+    }
+
+    .contact {
+      display: flex;
     }
 
   }
-  .email {
-
-  }
-  .github {
-
-  }
-  .linkdin {
+  #arrow {
+    color: #ECF0F1;
 
   }
 
 
   .cover {
-   width: 200px;
-   height:200px;
+  margin-left: 50px;
+  width: 200px;
+  height:200px;
   position:relative;
   border-radius: 50%;
   overflow:hidden;
   border: 10px solid #ccc;
-  float:left;
-  margin:20px;
   transition: all 1s;
--moz-transition: all 1s; /* Firefox 4 */
--webkit-transition: all 1s; /* Safari and Chrome */
--o-transition: all 1s; /* Opera */
 }
 
 .cover:hover{
