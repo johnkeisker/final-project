@@ -488,7 +488,7 @@
     font-weight: bold;
     color: white;
     text-shadow: 5px 5px 5px black;
-    line-height: .9;
+    line-height: 0.9;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -564,33 +564,34 @@
       height: 250px;
       border: 2px solid black;
       box-shadow: 5px 5px 5px gray;
-      margin: 5px 25px 5px 25px;
+      margin: 5px 25px;
       border-radius: 5px; }
   .list footer {
     display: flex;
     margin-top: 20px;
     border-top: 2px solid gray;
-    background: url("https://static.pexels.com/photos/6546/sky-night-space-trees-large.jpeg");
+    background: url("http://www.onelifeonewhistler.com/wp-content/uploads/2014/09/SC-Trees-Night-SKy-SGD1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: space-between;
-    width: 100%; }
-  .list .links {
+    width: 100%;
+    height: 350px; }
+  .list .contact {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
     justify-content: space-between;
-    width: 80%;
-    margin: 30px auto; }
-    .list .links i {
+    width: 90%;
+    margin: 20px auto; }
+    @media screen and (min-width: 650px) {
+      .list .contact {
+        flex-direction: row; } }
+    .list .contact i {
       color: #ECF0F1;
-      margin-left: 50px; }
-    .list .links .contact {
-      display: flex; }
-  .list #arrow {
-    color: #ECF0F1; }
+      margin-right: 30px; }
+    .list .contact .links > div > a:hover {
+      font-size: 30px; }
   .list .cover {
-    margin-left: 50px;
     width: 200px;
     height: 200px;
     position: relative;
@@ -605,8 +606,8 @@
     height: 200px;
     border-radius: 50%;
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     transition: all 1s;
     -webkit-transition: all 1000ms cubic-bezier(0.175, 0.885, 0.32, 1);
     /* older webkit */
@@ -640,3 +641,10 @@
     background: url("http://www.placecage.com/gif/200/200") no-repeat center center; }
   .list .pic2 {
     background: url("../assets/2013-09-19 18.14.46.jpg") no-repeat center center; }
+  .list .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    @media screen and (min-width: 650px) {
+      .list .links {
+        width: 60%; } }

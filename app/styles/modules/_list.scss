@@ -1,11 +1,9 @@
 * {
   margin: 0;
 }
-
 .list {
   background-color: #DBDBDE;
   background-image: url("http://medialoot-medialootinc.netdna-ssl.com/images/thumbs/1600x1036_Vector-City-Maps-Preview-1.jpg");
-
   .favorite {
     .brewery--logo {
       width: 256px;
@@ -14,11 +12,7 @@
       box-shadow: 5px 5px 5px gray;
       margin: 10px auto;
     }
-
-
-
   }
-
   header {
     border-bottom: 2px solid black;
     width: 100vw;
@@ -28,18 +22,15 @@
     background-size: cover;
     background-position: center;
     position: relative;
-    @media screen and (min-width: 650px) {
-    }
+    @media screen and (min-width: 650px) {}
   }
-
-  .title{
-
+  .title {
     font-size: 130px;
     font-family: cursive;
     font-weight: bold;
     color: white;
     text-shadow: 5px 5px 5px black;
-    line-height: .9;
+    line-height: 0.9;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -59,9 +50,7 @@
   }
   .brewery {
     margin: 50px 25px;
-
     float: left;
-
   }
   .brewery--logo {
     width: 256px;
@@ -73,14 +62,12 @@
   .brewery--info {
     text-align: center;
     width: 250px;
-
   }
   .a1 {
     font-size: 15px;
     color: #c0c0c0;
     text-shadow: 3px 3px 3px black;
   }
-
   a {
     font-size: 20px;
     font-family: Verdana;
@@ -88,11 +75,8 @@
     font-weight: bold;
     text-decoration: none;
     color: #0066ff;
-
   }
-
   ul {
-
     color: white;
     list-style: none;
     margin: 0 auto;
@@ -108,7 +92,6 @@
     margin-top: 20px;
     width: 100%;
     // margin-left: 40px;
-
     .inner-map {
       border: 2px solid black;
       box-shadow: 5px 5px 5px gray;
@@ -122,26 +105,23 @@
     font-family: Verdana;
     color: black;
   }
-
   .social {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 84%;
-    margin:20px auto;
-
-  a {
-    text-align: center;
-    display: block;
+    margin: 20px auto;
+    a {
+      text-align: center;
+      display: block;
     }
-
-  img {
-    width: 250px;
-    height: 250px;
-    border: 2px solid black;
-    box-shadow: 5px 5px 5px gray;
-    margin: 5px 25px 5px 25px;
-    border-radius: 5px;
+    img {
+      width: 250px;
+      height: 250px;
+      border: 2px solid black;
+      box-shadow: 5px 5px 5px gray;
+      margin: 5px 25px;
+      border-radius: 5px;
     }
   }
   footer {
@@ -149,100 +129,103 @@
     margin-top: 20px;
     border-top: 2px solid gray;
     // background-color: #304457;
-    background: url('https://static.pexels.com/photos/6546/sky-night-space-trees-large.jpeg');
+    // background: url('https://static.pexels.com/photos/6546/sky-night-space-trees-large.jpeg');
+    background: url('http://www.onelifeonewhistler.com/wp-content/uploads/2014/09/SC-Trees-Night-SKy-SGD1.jpg');
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     justify-content: space-between;
     width: 100%;
+    height: 350px;
 
   }
-  .links {
+  .contact {
     display: flex;
-    // flex-direction: column;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
     justify-content: space-between;
-    width: 80%;
-    margin: 30px auto;
-
+    width: 90%;
+    margin: 20px auto;
+    @media screen and (min-width: 650px) {
+      flex-direction: row;
+    }
 
     i {
       color: #ECF0F1;
-      margin-left: 50px;
+      margin-right: 30px;
     }
-
-    .contact {
-      display: flex;
+    .links > div > a:hover {
+      font-size: 30px;
     }
-
   }
-  #arrow {
-    color: #ECF0F1;
-
-  }
-
 
   .cover {
-  margin-left: 50px;
-  width: 200px;
-  height:200px;
-  position:relative;
-  border-radius: 50%;
-  overflow:hidden;
-  border: 10px solid #ccc;
-  transition: all 1s;
-}
-
-.cover:hover{
-   border-color: #ccc;
-}
-
-.box3d {
-   width: 100%;
-   height:200px;
-  border-radius: 50%;
-  position:absolute;
-  top: 0px;
-  left: 0px;
-  transition: all 1s;
--webkit-transition: all 1000ms cubic-bezier(0.175, 0.885, 0.320, 1); /* older webkit */
--webkit-transition: all 1000ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-   -moz-transition: all 1000ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+    // margin-top: 10px;
+    // margin-left: 50px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid #ccc;
+    transition: all 1s;
+  }
+  .cover:hover {
+    border-color: #ccc;
+  }
+  .box3d {
+    width: 100%;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 1s;
+    -webkit-transition: all 1000ms cubic-bezier(0.175, 0.885, 0.320, 1);
+    /* older webkit */
+    -webkit-transition: all 1000ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+    -moz-transition: all 1000ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
     -ms-transition: all 1000ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-     -o-transition: all 1000ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-        transition: all 1000ms cubic-bezier(0.175, 0.885, 0.320, 1.275); /* easeOutBack */
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -webkit-transform-style: preserve-3d;
-}
-
-.box3d:first-child {
-   text-align:right;
-  -webkit-transform: rotateY(180deg); /* Safari and Chrome */
-  -moz-transform: rotateY(180deg);
-}
-
-.cover:hover .box3d{
+    -o-transition: all 1000ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+    transition: all 1000ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+    /* easeOutBack */
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+  }
+  .box3d:first-child {
+    text-align: right;
+    -webkit-transform: rotateY(180deg);
+    /* Safari and Chrome */
+    -moz-transform: rotateY(180deg);
+  }
+  .cover:hover .box3d {
     transform: rotateY(180deg);
-  -webkit-transform: rotateY(180deg); /* Safari and Chrome */
-  -moz-transform: rotateY(180deg); /* Firefox */
-}
+    -webkit-transform: rotateY(180deg);
+    /* Safari and Chrome */
+    -moz-transform: rotateY(180deg);
+    /* Firefox */
+  }
+  .cover:hover .box3d:first-child {
+    z-index: 1;
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    /* Safari and Chrome */
+    -moz-transform: rotateY(0deg);
+  }
+  .pic1 {
+    background: url('http://www.placecage.com/gif/200/200') no-repeat center center;
+  }
+  .pic2 {
+    background: url('../assets/2013-09-19 18.14.46.jpg') no-repeat center center;
+  }
 
-.cover:hover .box3d:first-child{
-   z-index:1;
-   transform: rotateY(0deg);
-  -webkit-transform: rotateY(0deg); /* Safari and Chrome */
-  -moz-transform: rotateY(0deg);
-}
+  .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-.pic1 {
-   background: url('http://www.placecage.com/gif/200/200') no-repeat center center;
-}
-
-.pic2 {
-   background: url('../assets/2013-09-19 18.14.46.jpg') no-repeat center center;
-}
-
-
-
+    @media screen and (min-width: 650px) {
+      width: 60%;
+    }
+  }
 }
