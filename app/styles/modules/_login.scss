@@ -308,9 +308,12 @@
     text-shadow: 3px 3px 3px black;
     font-weight: bold;
     cursor: pointer;
+    transition: .1s;
   }
   .btn:active {
     transform: translateY(4px);
+    box-shadow: 0 5px #666;
+    transition: .1s;
   }
 
 }

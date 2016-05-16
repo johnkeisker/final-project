@@ -28,7 +28,7 @@
     </div>
   </div>
 
-  <div class="map-container" id="map">
+  <div class="map-container" id="map" ng-if="listCtrl.breweries.length > 0">
     <ng-map class="inner-map" default-style="true" center="-25.363882,131.044922" zoom="4" zoom-to-include-markers="true">
       <marker id="brewery_{{ brewery.id }}" position="{{ brewery.latitude }}, {{ brewery.longitude }}" title="{{ brewery.brewery.name}}" ng-repeat="brewery in listCtrl.breweries" on-click="listCtrl.showWindow(brewery)"></marker>
       <info-window id="brewery_window">

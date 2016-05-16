@@ -26,19 +26,7 @@
     overflow: hidden;
     zoom: 1;
 
-      #back {
-      outline: none;
-      float: left;
-      text-decoration: none;
-      font-style: Verdana;
-      font-weight: bolder;
-      color: white;
-      background-color: silver;
-      font-size: 10px;
-      margin-top: 10px;
-      height: 40px;
 
-    }
     h1 {
       margin-top: 10px;
       font-family: Verdana;
@@ -47,7 +35,7 @@
       font-weight: bold;
       color: #6699ff;
     }
-    button {
+    .fav {
       outline: none;
       font-family: Verdana;
       font-size: 12px;
@@ -59,8 +47,54 @@
       box-shadow: 3px 3px 3px black;
       float: right;
       cursor: pointer;
+      box-shadow: 0 5px #666;
+      transition: .1s;
 
+      &:active {
+        transform: translateY(4px);
+        transition: .1s;
+      }
     }
+    .unfav {
+      outline: none;
+      font-family: Verdana;
+      font-size: 12px;
+      background-color: red;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 5px 5px 5px;
+      box-shadow: 3px 3px 3px black;
+      float: right;
+      cursor: pointer;
+      box-shadow: 0 2px #666;
+      transition: .1s;
+
+      &:active {
+        transform: translateY(4px);
+        transition: .1s;
+      }
+    }
+    .back {
+    border-radius: 10px;
+    outline: none;
+    float: left;
+    text-decoration: none;
+    font-style: Verdana;
+    font-weight: bolder;
+    color: gray;
+    background-color: silver;
+    font-size: 10px;
+    margin-top: 10px;
+    height: 40px;
+    box-shadow: 0 2px #666;
+    transition: .1s;
+
+    &:active {
+      transform: translateY(4px);
+      transition: .1s;
+    }
+  }
 
   }
   .brewery-info {
@@ -157,6 +191,23 @@
 
     p {
       text-align: left;
+    }
+  }
+  .missing-content {
+    p {
+      position: absolute;
+      top: 95%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-family: Verdana;
+      text-shadow: 3px 3px 3px black;
+
+    }
+    a {
+      text-decoration: none;
+      color: #0066ff;
+      font-weight: bold;
     }
   }
 

@@ -22,17 +22,6 @@
     clear: both;
     overflow: hidden;
     zoom: 1; }
-    .detail header #back, .detail footer #back {
-      outline: none;
-      float: left;
-      text-decoration: none;
-      font-style: Verdana;
-      font-weight: bolder;
-      color: white;
-      background-color: silver;
-      font-size: 10px;
-      margin-top: 10px;
-      height: 40px; }
     .detail header h1, .detail footer h1 {
       margin-top: 10px;
       font-family: Verdana;
@@ -40,7 +29,7 @@
       text-shadow: 3px 3px 3px black;
       font-weight: bold;
       color: #6699ff; }
-    .detail header button, .detail footer button {
+    .detail header .fav, .detail footer .fav {
       outline: none;
       font-family: Verdana;
       font-size: 12px;
@@ -51,7 +40,46 @@
       padding: 5px 5px 5px 5px;
       box-shadow: 3px 3px 3px black;
       float: right;
-      cursor: pointer; }
+      cursor: pointer;
+      box-shadow: 0 5px #666;
+      transition: .1s; }
+      .detail header .fav:active, .detail footer .fav:active {
+        transform: translateY(4px);
+        transition: .1s; }
+    .detail header .unfav, .detail footer .unfav {
+      outline: none;
+      font-family: Verdana;
+      font-size: 12px;
+      background-color: red;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 5px 5px 5px;
+      box-shadow: 3px 3px 3px black;
+      float: right;
+      cursor: pointer;
+      box-shadow: 0 2px #666;
+      transition: .1s; }
+      .detail header .unfav:active, .detail footer .unfav:active {
+        transform: translateY(4px);
+        transition: .1s; }
+    .detail header .back, .detail footer .back {
+      border-radius: 10px;
+      outline: none;
+      float: left;
+      text-decoration: none;
+      font-style: Verdana;
+      font-weight: bolder;
+      color: gray;
+      background-color: silver;
+      font-size: 10px;
+      margin-top: 10px;
+      height: 40px;
+      box-shadow: 0 2px #666;
+      transition: .1s; }
+      .detail header .back:active, .detail footer .back:active {
+        transform: translateY(4px);
+        transition: .1s; }
   .detail .brewery-info {
     display: flex;
     margin: 0 auto;
@@ -123,6 +151,18 @@
     border: 1px solid #f2f2f2; }
     .detail .face.back p {
       text-align: left; }
+  .detail .missing-content p {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: Verdana;
+    text-shadow: 3px 3px 3px black; }
+  .detail .missing-content a {
+    text-decoration: none;
+    color: #0066ff;
+    font-weight: bold; }
 
 .login {
   background-image: url("http://tap42.com/wp-content/themes/webdiner/images/home-table.jpg");
@@ -364,9 +404,12 @@
     margin: 20px auto;
     text-shadow: 3px 3px 3px black;
     font-weight: bold;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: .1s; }
   .login .btn:active {
-    transform: translateY(4px); }
+    transform: translateY(4px);
+    box-shadow: 0 5px #666;
+    transition: .1s; }
 
 .register {
   height: 100vh;
@@ -450,7 +493,7 @@
     font-size: 20px;
     font-family: Verdana; }
   .home .home--link1 {
-    background-color: #529ECC;
+    background-color: rgba(82, 158, 204, 0.9);
     background-position: center;
     width: 200px;
     padding: 10px 5px 10px 5px;
@@ -458,7 +501,12 @@
     margin: 50px auto;
     border-radius: 5px;
     box-shadow: 3px 3px 3px black;
-    text-shadow: 3px 3px 3px black; }
+    text-shadow: 3px 3px 3px black;
+    box-shadow: 0 5px #666;
+    transition: .1s; }
+    .home .home--link1:active {
+      transform: translateY(4px);
+      transition: .1s; }
   .home .home--link2 {
     background-color: #529ECC;
     background-position: center;
@@ -468,7 +516,10 @@
     margin: 0 auto;
     border-radius: 5px;
     box-shadow: 3px 3px 3px black;
-    text-shadow: 3px 3px 3px black; }
+    text-shadow: 3px 3px 3px black;
+    box-shadow: 0 5px #666; }
+    .home .home--link2:active {
+      transform: translateY(4px); }
 
 * {
   margin: 0; }
@@ -517,6 +568,7 @@
     margin: 50px 25px;
     float: left; }
   .list .brewery--logo {
+    background-image: url("http://www.savourbeer.com/wp-content/uploads/2013/11/Craft-Beer-Rising.jpeg");
     width: 256px;
     height: 256px;
     border: 2px solid black;
@@ -655,6 +707,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    .list .links div i {
+      transition: 1s; }
+    .list .links div:hover i {
+      transform: rotateY(360deg);
+      transition: 1s; }
     @media screen and (min-width: 650px) {
       .list .links {
         width: 60%; } }
