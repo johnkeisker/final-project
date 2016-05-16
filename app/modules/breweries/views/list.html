@@ -5,10 +5,8 @@
 
   <div class="breweries">
     <div class="brewery" ng-class="{ 'favorite': listCtrl.isFavorite(brewery) }" ng-repeat="brewery in listCtrl.breweries">
-      <div class="brewery--logo">
-        <a ui-sref="brewery({ id: brewery.breweryId })">
+      <div class="brewery--logo" ui-sref="brewery({ id: brewery.breweryId })">
           <img ng-src="{{ brewery.brewery.images.squareMedium }}">
-        </a>
       </div>
 
       <div class="brewery--info">

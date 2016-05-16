@@ -51,6 +51,7 @@
   .brewery {
     margin: 50px 25px;
     float: left;
+    cursor: pointer;
   }
   .brewery--logo {
     background-image: url('http://www.savourbeer.com/wp-content/uploads/2013/11/Craft-Beer-Rising.jpeg');
@@ -115,6 +116,7 @@
     a {
       text-align: center;
       display: block;
+      cursor: pointer;
     }
     img {
       width: 250px;
@@ -123,6 +125,7 @@
       box-shadow: 5px 5px 5px gray;
       margin: 5px 25px;
       border-radius: 5px;
+      cursor: pointer;
     }
   }
   footer {
@@ -168,6 +171,7 @@
     overflow: hidden;
     border: 10px solid #ccc;
     transition: all 1s;
+    cursor: pointer;
   }
   .cover:hover {
     border-color: #ccc;
