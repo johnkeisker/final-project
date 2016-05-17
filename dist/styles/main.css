@@ -5,13 +5,13 @@
   overflow: hidden; }
   .detail.favorite h1 {
     color: #6699ff;
-    text-shadow: 3px 3px 3px black;
+    text-shadow: 5px 5px 5px black;
     font-family: 'Chicle', cursive;
-    font-size: 40px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("https://pixabay.com/static/uploads/photo/2014/01/28/15/08/beer-253791_960_720.jpg");
-    border-radius: 8px;
+    font-size: 50px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("http://homebrewmanual.com/media/beer-ingredients-hops.jpg");
+    border-radius: 20px;
     width: 50%;
-    padding: 5px 5px 5px 5px; }
+    padding: 50px 5px 50px 5px; }
   .detail .back-face-p {
     font-size: 18px;
     line-height: 1.4;
@@ -21,8 +21,8 @@
     overflow-y: scroll;
     height: 90%; }
   .detail header, .detail footer {
-    width: 90%;
-    margin-top: 5px;
+    width: 95%;
+    margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 25px;
@@ -35,8 +35,8 @@
     .detail header h1, .detail footer h1 {
       margin-top: 10px;
       font-family: 'Chicle', cursive;
-      font-size: 35px;
-      text-shadow: 3px 3px 3px black;
+      font-size: 50px;
+      text-shadow: 5px 5px 5px black;
       font-weight: bold;
       color: #6699ff; }
     .detail header .fav, .detail footer .fav {
@@ -52,9 +52,9 @@
       background-color: red;
       color: white;
       border: none;
-      border-radius: 5px;
+      border-radius: 10px;
       padding: 5px 5px 5px 5px;
-      box-shadow: 3px 3px 3px black;
+      box-shadow: 0 2px #666;
       float: right;
       cursor: pointer; }
       .detail header .fav:active, .detail footer .fav:active {
@@ -73,9 +73,9 @@
       background-color: red;
       color: white;
       border: none;
-      border-radius: 5px;
+      border-radius: 10px;
       padding: 5px 5px 5px 5px;
-      box-shadow: 3px 3px 3px black;
+      box-shadow: 0 2px #666;
       float: right;
       cursor: pointer; }
       .detail header .unfav:active, .detail footer .unfav:active {
@@ -88,9 +88,9 @@
       text-decoration: none;
       font-style: Verdana;
       font-weight: bolder;
-      color: gray;
+      color: black;
       background-color: silver;
-      font-size: 10px;
+      font-size: 12px;
       margin-top: 10px;
       height: 40px;
       box-shadow: 0 2px #666;
