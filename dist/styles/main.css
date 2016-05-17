@@ -612,7 +612,7 @@
     text-align: center;
     width: 250px; }
   .list .a1 {
-    font-size: 15px;
+    font-size: 20px;
     color: #c0c0c0;
     text-shadow: 3px 3px 3px black; }
   .list a {
@@ -621,7 +621,8 @@
     text-align: center;
     font-weight: bold;
     text-decoration: none;
-    color: #0066ff; }
+    color: #0066ff;
+    text-shadow: 3px 3px 3px black; }
   .list ul {
     color: white;
     list-style: none;
@@ -654,7 +655,8 @@
     .list .social a {
       text-align: center;
       display: block;
-      cursor: pointer; }
+      cursor: pointer;
+      text-shadow: 3px 3px 3px black; }
     .list .social img {
       width: 250px;
       height: 250px;
