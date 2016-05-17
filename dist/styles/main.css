@@ -558,7 +558,7 @@
 
 .list {
   background-color: #DBDBDE;
-  background-image: url("http://medialoot-medialootinc.netdna-ssl.com/images/thumbs/1600x1036_Vector-City-Maps-Preview-1.jpg"); }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("http://medialoot-medialootinc.netdna-ssl.com/images/thumbs/1600x1036_Vector-City-Maps-Preview-1.jpg"); }
   .list .favorite .brewery--logo {
     width: 256px;
     height: 256px;

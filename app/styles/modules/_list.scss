@@ -3,7 +3,7 @@
 }
 .list {
   background-color: #DBDBDE;
-  background-image: url("http://medialoot-medialootinc.netdna-ssl.com/images/thumbs/1600x1036_Vector-City-Maps-Preview-1.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("http://medialoot-medialootinc.netdna-ssl.com/images/thumbs/1600x1036_Vector-City-Maps-Preview-1.jpg");
   .favorite {
     .brewery--logo {
       width: 256px;
@@ -94,7 +94,7 @@
   .map-container {
     margin-top: 20px;
     width: 100%;
-    // margin-left: 40px;
+
     .inner-map {
       border: 2px solid black;
       box-shadow: 5px 5px 5px gray;
@@ -133,8 +133,6 @@
     display: flex;
     margin-top: 20px;
     border-top: 2px solid gray;
-    // background-color: #304457;
-    // background: url('https://static.pexels.com/photos/6546/sky-night-space-trees-large.jpeg');
     background: url('http://www.onelifeonewhistler.com/wp-content/uploads/2014/09/SC-Trees-Night-SKy-SGD1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -163,8 +161,6 @@
     }
   }
   .cover {
-    // margin-top: 10px;
-    // margin-left: 50px;
     width: 200px;
     height: 200px;
     position: relative;
