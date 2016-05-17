@@ -13,8 +13,11 @@ class BreweryListController {
       .isLoggedIn()
       .then((response) => {
         this.user = response;
-        this._BreweryService.login(this.user);
-        this._BreweryService.all()
+        this._BreweryService
+          .login(this.user)
+          .then((response) => {
+            return this._BreweryService.all()
+          })
           .then((response) => {
             this.breweries = response;
             console.log(this.breweries);

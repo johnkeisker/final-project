@@ -11,6 +11,7 @@ class BreweryService {
   login(user) {
     this.user = user;
     this.firebase_breweries = this._$firebaseArray(this._UserService.ref.child('users').child(this.user.uid).child('breweries'));
+    return this.firebase_breweries.$loaded();
   }
 
   all() {
@@ -26,6 +27,7 @@ class BreweryService {
 
           response.forEach((city) => {
             city.data.data.forEach((brewery) => {
+              brewery.favorite = this.isFavorite(brewery.brewery.id);
               this.breweries.push(brewery);
             });
           })
