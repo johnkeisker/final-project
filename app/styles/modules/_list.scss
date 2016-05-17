@@ -25,7 +25,8 @@
     @media screen and (min-width: 650px) {}
   }
   .title {
-    font-size: 130px;
+    width: 90%;
+    font-size: 75px;
     font-family: cursive;
     font-weight: bold;
     color: white;
@@ -36,7 +37,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     @media screen and (min-width: 650px) {
-      left: 30%;
+      left: 50%;
     }
   }
   .breweries {
