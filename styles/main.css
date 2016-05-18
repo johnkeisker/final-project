@@ -206,7 +206,6 @@
     border-bottom: 3px solid black; }
   .login #action {
     margin: 0 auto;
-    width: 700px;
     position: relative;
     height: 300px; }
   .login #keg {
@@ -502,6 +501,7 @@
 .home {
   height: 800px;
   width: 100%;
+  background-color: #000000;
   background-position: center;
   background-image: url("http://hrgrowler.com/wp-content/uploads/2015/11/craft-beer-cheers.jpg"); }
   .home .title {
