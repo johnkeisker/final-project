@@ -499,9 +499,9 @@
     transform: translateY(4px); }
 
 .home {
-  height: 800px;
+  min-height: 100vh;
   width: 100%;
-  background-color: #000000;
+  background-color: #000;
   background-position: center;
   background-image: url("http://hrgrowler.com/wp-content/uploads/2015/11/craft-beer-cheers.jpg"); }
   .home .title {
