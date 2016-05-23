@@ -669,12 +669,12 @@
     display: flex;
     margin-top: 20px;
     border-top: 2px solid gray;
-    background: url("http://www.onelifeonewhistler.com/wp-content/uploads/2014/09/SC-Trees-Night-SKy-SGD1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: space-between;
     width: 100%;
-    height: 350px; }
+    height: 100px;
+    background-color: #32446C; }
   .list .contact {
     display: flex;
     flex-direction: column;
